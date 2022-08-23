@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+}
+
+/*sizing*/
+.menu,.footer{
+    flex:1;
+}
+
+.header,.profile,.quote,.signup{
+    flex:6;
+}
+
+
+
+.menu{
+    background-color: #1F2937;
+
+}
+
+.header{
+    background-color: #1F2937;
+
+}
+
+.profile{
+
+}
+
+.quote{
+    background-color: #E5E7EB;
+}
+
+.signup{
+
+}
+
+.footer{
+
+}
