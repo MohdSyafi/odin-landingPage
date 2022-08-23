@@ -1,3 +1,22 @@
+@font-face {
+    font-family: roboto-light;
+    src: url(./fonts/Roboto/Roboto-Light.ttf);
+  }
+
+@font-face {
+font-family: roboto-bold;
+src: url(./fonts/Roboto/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: roboto-thin;
+    src: url(./fonts/Roboto/Roboto-Thin.ttf);
+    }
+
+* {
+    font-family: roboto-light;
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -8,6 +27,7 @@ body{
 /*sizing*/
 .menu,.footer{
     flex:1;
+    display: flex;
 }
 
 .header,.profile,.quote,.signup{
@@ -15,15 +35,57 @@ body{
 }
 
 
-
+/*style*/
 .menu{
+    display: flex;
     background-color: #1F2937;
+    justify-content:space-around;
 
+}
+
+.menu h1{
+    color: #F9FAF8;
+    font-size: 24px;
+    font-family: roboto-bold;
+}
+
+.menu-link{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menu-link h2{
+    font-size: 18px;
+    color: #E5E7EB;
+    margin-left: 24px;
+    font-family: roboto-thin;
+    align-items: center;
 }
 
 .header{
     background-color: #1F2937;
+    display: flex;
+    justify-content: space-around;
+}
 
+.header div{
+    display:flex;
+    flex-direction: column;
+    margin-left: 88px;
+    padding-bottom: 32px;
+}
+
+.header-image{
+    width: 325px;
+    height: 200px;
+    margin-right: 88px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.header img{
+    width:320px;
+    height: auto;
 }
 
 .profile{
